@@ -90,13 +90,14 @@ const q_images = {
 };
 
 const q_descriptions = {
-q1: "You slept poorly last night. You went on a fourth date a few days ago and \
-sense a rejection coming any moment now.<br/><br/>\
+q1: "You got an hour of sleep last night, knowing a rejection was coming any moment now. You went on a fourth date a few days ago and it's been taking them longer to respond than before. \
+At this point, you're just waiting for it to happen.<br/><br/>\
 You flip your phone over. They've finally texted you back. You hold your breath and close your eyes.<br/><br/>\
 <i>\"Yay I'm glad the concert was fun!\"<br/>\
-\"Also I've been thinking about this and...\"<br/><br/></i>\
-You hadn't even saved this number and yet you'd imagined the memories ahead. \
-Why did you let yourself hope again? This hurts. But it hurts more to not let yourself hope at all, you suppose.<br/><br/>\
+\"Hey, I've been thinking about this and...\"<br/>\
+\"You are great and...\"<br/><br/></i>\
+You hadn't even saved this number yet but you'd allowed yourself to imagine the memories ahead. \
+You knew it was dangerous to let yourself hope. This hurts. But it hurts more to not let yourself hope at all, you suppose.<br/><br/>\
 You text the nameless number back promptly, ending your reply with:",
 q2: "You won't let this stop your morning run. \
 One problem: you're out of clean clothes. What do you wear?",
@@ -130,7 +131,7 @@ Based on the timestamps, they probably texted you back right before bed and firs
 Did it mean they really liked you? Did it mean nothing to them? In any case, it was endearing.<br/><br/>\
 You wonder how they felt when you texted them. Was it exciting? Comforting? Meaningless? Nightmare fuel?<br/><br/>\
 Anyway. It's over now, and you're not going to be on that continent any time soon. You:",
-q8: "You'll find love. \
+q8: "Everything is fine. You'll find love. \
 You just need to put yourself out there! \
 And you may as well refresh your dating profile while this motivation is around.<br/><br/>\
 Actually...maybe let's just start with a single photo. You go through your camera roll and many photos feel too precious to throw into \
@@ -138,11 +139,11 @@ the void of the app. From the remaining photos, you end up going with:",
 q9: "You update the photo and then swipe aimlessly. \
 Maybe you don't know what you want. Or maybe you want the wrong things? Are you...the problem?<br/><br/>\
 You open your laptop and your photos app sends you a notification. <i>You have a new memory.</i> \
-It's your ex and your friends at Fourth-date-person Park. \
-...Okay! Let's take our mind elsewhere. <br/><br/>\
+It's your ex and your friends at Fourth-date-person Park. You're not sure why you all ended up there that day, but you remember it being a good time. \
+You have mixed feelings about how many memories you have attached to this park now.<br/><br/>\
 Your video recommendations have shifted toward dating advice. \
 You're not sure what this is doing to your psyche. The video drawing you in today is:",
-q10: "You watch the video on 2x speed and now your laundry is done! \
+q10: "You watch the video on 2x speed, wonder what videos the love of your life is getting recommended, and now your laundry is done! \
 While emptying the dryer lint trap, you find a ball of fluff that looks like a mouse. \
 Your ex would've loved this. You have no idea if fourth-date-person would.",
 q11: {
@@ -173,7 +174,7 @@ Your friend asks how dating has been going. It's been going! The hardest part ri
 q14: "Your friend tells you, earnestly and lovingly, after hearing you met the last person through a dating app, \
 that you should try meeting people 'in real life' instead.<br/><br/>\
 Your friend pauses. <i>\"I just remembered. I have this friend, Plonk, who wants to get set up. I'm not sure if it's a romantic fit, \
-but I'll throw you two into a group chat if you're open to it?\"</i> You are, in fact, open to it.<br/><br/>\
+but Plonk is an interesting person so hopefully you both have a good conversation no matter what. I'll throw you two into a group chat if you're open to it?\"</i> You are, in fact, open to it.<br/><br/>\
 Is this...the start of the rest of your life?",
 q15: "You're still riding the momentum of 'putting yourself out there' \
 and decide to ask someone to get dinner before your confidence fades.<br/><br/>\
@@ -186,7 +187,7 @@ You get ready for the maybe-date (can't be too sure about these things). \
 You look in the mirror. You're more self-conscious than you were a few months ago. You change shirts thrice.<br/><br/>\
 What will you talk about on this maybe-date? You've been feeling less interesting over time. Maybe \
 you're just sick of telling strangers how long you've lived in the city for. But maybe you should practice? You \
-start replaying your last first date's transcript in excruciating detail. <i>Hey, so nice to meet you!</i> <br/><br/>\
+start replaying your last first date's transcript in excruciating detail. <i>Hey, so nice to meet you! [Blanks on what their name is]</i> <br/><br/>\
 ...Let's wince later. Dinner awaits!",
 q18: {
 	ev: "<i>\"So what got you into running?\"</i>",
@@ -203,12 +204,12 @@ q20: {
 	amb: "<i>\"My life is basically work and gym. But I'm just so competitive about both. If I'm not constantly improving, I get frustrated. I wish I could be more chill.\"</i>",
 	plonk: "<i>\"If you could travel anywhere in the world, where would it be?\"</i>"	
 },
-q21: "Finally, you return home. How did you feel about dinner?",
+q21: "Finally, you return home. You can't help but compare this to how fourth-date-person made you feel. But again, it's over! So how did you feel about this dinner?",
 q22: "Big day! You're proud of yourself for getting through it. One step at a time.<br/><br/>\
 Fourth-date-person hasn't texted you. Of course they haven't. \
 But you've been through this before, and you know that though this will hurt, this will eventually pass. \
 It feels contradictory, but you have this sinking feeling that everything will be okay.<br/><br/>\
-This thought brings you comfort before you sleep:"
+You turn off the lights and stare into the darkness for a while, wondering what comes next. Heart racing, this thought brings you back to the present:"
 }; 
 const q_choices = {
 	q1: {
@@ -362,13 +363,25 @@ const q_choices = {
 	},
 	q7: {
 		choice0: {
-			text: "Delete the city—you don't need this remnant lying around.",
+			text: "Delete the city—you don't want to be reminded of this.",
+			ra: 0,
+			ri: 1,
+			sn: 0
+		},
+		choice1: {
+			text: "Delete the city—this info is useless.",
 			ra: 0,
 			ri: -1,
 			sn: 0
 		},
-		choice1: {
-			text: "Keep the city—this is the souvenir for your four dates.",
+		choice2: {
+			text: "Passively keep the city—you'll figure this out later.",
+			ra: 0,
+			ri: -1,
+			sn: 0
+		},
+		choice3: {
+			text: "Actively keep the city—this is the souvenir for your four dates.",
 			ra: 0,
 			ri: 1,
 			sn: 0
@@ -423,6 +436,18 @@ const q_choices = {
 			text: "Do THIS to make them want you. 5 SUBTLE TIPS",
 			ra: 0,
 			ri: -1,
+			sn: 0
+		},
+		choice4: {
+			text: "THIS is why they NEVER TEXT YOU BACK! Do THIS instead",
+			ra: 0,
+			ri: -1,
+			sn: 0
+		},
+		choice5: {
+			text: "Why Haven't I Met Someone Yet?",
+			ra: 0,
+			ri: 1,
 			sn: 0
 		}
 	},
@@ -501,6 +526,30 @@ const q_choices = {
 		},
 		choice3: {
 			text: "Not trusting your judgment.",
+			ra: 0,
+			ri: 1,
+			sn: -1
+		},
+		choice4: {
+			text: "How self-conscious you've become.",
+			ra: 0,
+			ri: -1,
+			sn: 1
+		},
+		choice5: {
+			text: "How empty you've been feeling.",
+			ra: 0,
+			ri: 1,
+			sn: 1
+		},
+		choice6: {
+			text: "Having to face rejection over and over again.",
+			ra: 0,
+			ri: -1,
+			sn: -1
+		},
+		choice7: {
+			text: "Having to constantly ask yourself how you feel about someone.",
 			ra: 0,
 			ri: 1,
 			sn: -1
@@ -801,6 +850,30 @@ const q_choices = {
 		},
 		choice3: {
 			text: "It just takes one.",
+			ra: 1,
+			ri: -1,
+			sn: 0
+		},
+		choice4: {
+			text: "I'm learning about myself.",
+			ra: -1,
+			ri: 1,
+			sn: 0
+		},
+		choice5: {
+			text: "I'm proud of myself.",
+			ra: 1,
+			ri: 1,
+			sn: 0
+		},
+		choice6: {
+			text: "At least this is plot progression.",
+			ra: -1,
+			ri: -1,
+			sn: 0
+		},
+		choice7: {
+			text: "This isn't everything.",
 			ra: 1,
 			ri: -1,
 			sn: 0
