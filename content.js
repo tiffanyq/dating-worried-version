@@ -796,7 +796,7 @@ const q_choices = {
 				sn: 0
 			},
 			choice2: {
-				text: "AAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+				text: "AAAAAAHHHHHHHHHHHHHHH !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
 				ra: 0,
 				ri: 0,
 				sn: 0
