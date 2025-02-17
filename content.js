@@ -90,14 +90,14 @@ const q_images = {
 };
 
 const q_descriptions = {
-q1: "You got an hour of sleep last night, knowing a rejection was coming any moment now. You went on a fourth date a few days ago and it's been taking them longer to respond than before. \
-At this point, you're just waiting for it to happen.<br/><br/>\
+q1: "You got an hour of sleep last night. You went on a fourth date a few days ago and it's been taking them longer to respond than before. \
+A rejection is coming any moment now and at this point you just want to get it over with.<br/><br/>\
 You flip your phone over. They've finally texted you back. You hold your breath and close your eyes.<br/><br/>\
 <i>\"Yay I'm glad the concert was fun!\"<br/>\
 \"Hey, I've been thinking about this and...\"<br/>\
 \"You are great and...\"<br/><br/></i>\
 You hadn't even saved this number yet but you'd allowed yourself to imagine the memories ahead. \
-You knew it was dangerous to let yourself hope. This hurts. But it hurts more to not let yourself hope at all, you suppose.<br/><br/>\
+You knew it would hurt to let yourself hope. But it hurts more to not let yourself hope at all, you suppose.<br/><br/>\
 You text the nameless number back promptly, ending your reply with:",
 q2: "You won't let this stop your morning run. \
 One problem: you're out of clean clothes. What do you wear?",
@@ -105,11 +105,11 @@ q3: "It's like, what, 7:15AM? Who could you possibly see at this time?<br/><br/>
 You listen to the same song on repeat and let it carry you through the miles. The act of running right now feels like you're:",
 q4: "You run through the park where you first met fourth-date-person. \
 You wonder what you could've done differently. Was it something you said? Maybe you:",
-q5: "That was a long run!! Your weeks-unwashed clothes are soaked. \
+q5: "That was a long run!! Your weeks-unwashed clothes are soaked. Your eyes sting from the sweat rolling into them. \
 As you air out your armpits, you see someone walking in your direction. \
 They're wearing a shirt for your favorite football team and so is the dog they're walking. Are they looking at you? <br/><br/>\
 Is this...the moment you've been waiting for?<br/><br/>\
-The stranger looks at you again and you instinctively look away. Your eyes sting from the sweat rolling into them. Ahhh!! Why is this happening <i>now</i>?!<br/><br/>\
+The stranger looks at you again and you instinctively look away. You wipe your face. Ahhh!! Why is this happening <i>now</i>?!<br/><br/>\
 They're walking past you. What now?",
 q6: {
 	1: "You look up, but they keep on walking.",
@@ -190,19 +190,19 @@ you're just sick of telling strangers how long you've lived in the city for. But
 start replaying your last first date's transcript in excruciating detail. <i>Hey, so nice to meet you! [Blanks on what their name is]</i> <br/><br/>\
 ...Let's wince later. Dinner awaits!",
 q18: {
-	ev: "<i>\"So what got you into running?\"</i>",
-	amb: "<i>\"Amb is short for Amorphous Blob.\"</i>",
-	plonk: "<i>\"So nice to meet you! How has your experience with dating in the city been?\"</i>"	
+	ev: "<i>\"So how did you get into football?\"</i>",
+	amb: "<i>\"You have a nice name.\"</i>",
+	plonk: "<i>\"I just got out of a five year long relationship.\"</i>"
 },
 q19: {
-	ev: "<i>\"I do follow football pretty closely, but we don't have to talk about it. I'm sure you know way more than me and I don't want to bore you!\"</i>",
-	amb: "<i>\"I moved here for work.\"</i>",
-	plonk: "<i>\"So where do you see yourself settling down in 10 years? Geographically.\"</i>"	
+	ev: "<i>\"I'm not sure what I do in my free time to be honest!\"</i>",
+	amb: "<i>\"Recently I've gotten really into running. It's frustrating though because all I want to do is run as fast as possible. I can't get myself to slow down!\"</i>",
+	plonk: "<i>\"If you were a kitchen appliance, what would you be?\"</i>"
 },
 q20: {
-	ev: "<i>\"I recently reflected on what my favorite color is and I think it's changed from orange to purple.\"</i>",
-	amb: "<i>\"My life is basically work and gym. But I'm just so competitive about both. If I'm not constantly improving, I get frustrated. I wish I could be more chill.\"</i>",
-	plonk: "<i>\"If you could travel anywhere in the world, where would it be?\"</i>"	
+	ev: "<i>\"My dog's name is Bev. I didn't think this through because whenever someone says Bev's name, I think they're talking to me.\"</i>",
+	amb: "<i>\"I love cooking for friends. It's so nice to have an excuse to go all out on a huge dinner spread.\"</i>",
+	plonk: "<i>\"So how long have you lived in the city for?\"</i>"
 },
 q21: "Finally, you return home. You can't help but compare this to how fourth-date-person made you feel. But again, it's over! So how did you feel about this dinner?",
 q22: "Big day! You're proud of yourself for getting through it. One step at a time.<br/><br/>\
@@ -537,7 +537,7 @@ const q_choices = {
 			sn: 1
 		},
 		choice5: {
-			text: "How empty you've been feeling.",
+			text: "How disappointing it is when things don't work out.",
 			ra: 0,
 			ri: 1,
 			sn: 1
@@ -549,7 +549,7 @@ const q_choices = {
 			sn: -1
 		},
 		choice7: {
-			text: "Having to constantly ask yourself how you feel about someone.",
+			text: "Having the courage to end things.",
 			ra: 0,
 			ri: 1,
 			sn: -1
@@ -620,19 +620,19 @@ const q_choices = {
 	q18: {
 		ev: {
 			choice0: {
-				text: "I'm training for an upcoming race.",
+				text: "I can't remember. What about you?",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice1: {
-				text: "One day I just ran and liked it. Do you run?",
+				text: "Oh, you know, I just grew up with it. But what keeps me going? Let's see...",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice2: {
-				text: "Let's return to the very start. Legend has it that my first steps as a baby were running ones. My first memory is of...",
+				text: "It's great to have something to talk to people about.",
 				ra: 0,
 				ri: 0,
 				sn: 0
@@ -640,19 +640,19 @@ const q_choices = {
 		},
 		amb: {
 			choice0: {
-				text: "Wow!",
+				text: "Thanks!",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice1: {
-				text: "Say more",
+				text: "What about it?",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice2: {
-				text: "Tell me about your relationship with your family",
+				text: "Really?",
 				ra: 0,
 				ri: 0,
 				sn: 0
@@ -660,19 +660,19 @@ const q_choices = {
 		},
 		plonk: {
 			choice0: {
-				text: "Okay, I guess...so how long have you lived in the city for?",
+				text: "Wow!",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice1: {
-				text: "So today I woke up to a text...",
+				text: "Thank you for sharing that with me. How has it been going? How have you been feeling about that?",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice2: {
-				text: "Want to see my 50-slide deck about this?",
+				text: "What was that like?",
 				ra: 0,
 				ri: 0,
 				sn: 0
@@ -682,19 +682,19 @@ const q_choices = {
 	q19: {
 		ev: {
 			choice0: {
-				text: "I'm sure you know a lot!",
+				text: "Walk me through a day in your life!",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice1: {
-				text: "Tell me absolutely everything",
+				text: "Oh, really?",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice2: {
-				text: "Actually yeah. Can we talk about something else?",
+				text: "I feel the same way!",
 				ra: 0,
 				ri: 0,
 				sn: 0
@@ -702,19 +702,19 @@ const q_choices = {
 		},
 		amb: {
 			choice0: {
-				text: "Same!",
+				text: "I totally feel you.",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice1: {
-				text: "What do you do for work?",
+				text: "What do you think makes you feel that way?",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice2: {
-				text: "What went into the decision to make the move?",
+				text: "I truly cannot relate!",
 				ra: 0,
 				ri: 0,
 				sn: 0
@@ -722,19 +722,19 @@ const q_choices = {
 		},
 		plonk: {
 			choice0: {
-				text: "I'm not sure.",
+				text: "Sometimes I think I look like a spoon.",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice1: {
-				text: "I have some idea but I continually revisit this. How I think about it is...",
+				text: "First, let's align on what counts as a kitchen appliance.",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice2: {
-				text: "Wherever you are?",
+				text: "Are you interviewing me?",
 				ra: 0,
 				ri: 0,
 				sn: 0
@@ -744,19 +744,19 @@ const q_choices = {
 	q20: {
 		ev: {
 			choice0: {
-				text: "Great!",
+				text: "Where did the name Bev come from?",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice1: {
-				text: "What prompted this reflection?",
+				text: "Have you considered changing your name?",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice2: {
-				text: "Walk me through the entire journey and how each color feels.",
+				text: "Bev!",
 				ra: 0,
 				ri: 0,
 				sn: 0
@@ -764,19 +764,19 @@ const q_choices = {
 		},
 		amb: {
 			choice0: {
-				text: "I totally feel that!",
+				text: "What do you like to cook?",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice1: {
-				text: "I can see how that's frustrating. What do you want to get out of being 'more chill'?",
+				text: "How is it different cooking for friends versus cooking for yourself?",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice2: {
-				text: "Oh!",
+				text: "Does that get expensive?",
 				ra: 0,
 				ri: 0,
 				sn: 0
@@ -784,19 +784,19 @@ const q_choices = {
 		},
 		plonk: {
 			choice0: {
-				text: "Nothing immediate comes to mind. You?",
+				text: "I've been here for a while now. How many years has it been? Let's see...",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice1: {
-				text: "Home, probably.",
+				text: "Well, TECHNICALLY, when I first moved here, I lived one block beyond the city limits. So let's think for a bit...",
 				ra: 0,
 				ri: 0,
 				sn: 0
 			},
 			choice2: {
-				text: "Do I have unlimited time and money? Who's going with me?",
+				text: "AAAAAAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
 				ra: 0,
 				ri: 0,
 				sn: 0
