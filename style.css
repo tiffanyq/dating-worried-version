@@ -61,6 +61,12 @@ a {
   font-weight: 600;
 }
 
+#alt-link {
+  margin-top: 8px;
+  float: right;
+  margin-bottom: -16px;
+}
+
 #q-image, .start-img {
   width: 300px;
   margin-bottom: 16px;
